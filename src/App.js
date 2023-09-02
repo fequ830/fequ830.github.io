@@ -25,8 +25,8 @@ const Navigation = () => (
 
 const Home = () => (
   <div className='home'>
-    <h1>WELCOME!</h1>
-    <p> Feel free to browse around and learn more about me.</p>
+    <h1>Welcome</h1>
+    <p> This website's design an ode to my favorite mystery game: Return of the Obra Dinn</p>
   </div>
 );
 
