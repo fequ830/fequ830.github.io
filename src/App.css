@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #333319;
-  font-family: Helvetica, sans-serif
+  font-family: Helvetica, serif
 }
 
 .app {
@@ -49,7 +49,7 @@ nav ul li a {
 h1 {
   margin-bottom: 20px;
   color: #e5ffff;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 p {
@@ -63,4 +63,23 @@ p {
   justify-content: center;
   align-items: center;
   color: #e5ffff 
+}
+
+.about img {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a maximum width to control image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+
+/* Styles for the active tab */
+.tab.active {
+  text-decoration: underline;
+  cursor: pointer; /* Add this for pointer cursor on hover */
+}
+
+/* Styles for the slash (/) between "Welcome" and "Bienvenue" */
+h1 span:nth-child(2) {
+  margin: 0 20px; /* Add space between the words */
 }

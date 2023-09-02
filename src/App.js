@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
 
 
 const App = () => (
@@ -23,18 +24,57 @@ const Navigation = () => (
   </nav>
 );
 
-const Home = () => (
-  <div className='home'>
-    <h1>Welcome</h1>
-    <p> This website's design an ode to my favorite mystery game: Return of the Obra Dinn</p>
-  </div>
-);
+// const Home = () => {
+//   const [welcome, setWelcome] = useState(true);
+
+//   const toggleWelcome = () => {
+//     setWelcome((prevState) => !prevState);
+//   };
+
+//   return (
+//     <div className='home'>
+//       <h1 onClick={toggleWelcome} style={{ cursor: 'pointer' }}>
+//         {welcome ? 'Welcome' : 'Bienvenue'}
+//       </h1>
+//       <p>Ipsum dolor dolorem consectetur est velit fugiat...</p>
+//     </div>
+//   );
+// };
+
+const Home = () => {
+  const [activeTab, setActiveTab] = useState('welcome');
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
+  return (
+    <div className='home'>
+      <h1>
+        <span
+          className={`tab ${activeTab === 'welcome' ? 'active' : ''}`}
+          onClick={() => handleTabClick('welcome')}
+        >
+          {activeTab === 'welcome' ? '>Welcome' : 'Welcome'}
+        </span>
+        <span>/</span>
+        <span
+          className={`tab ${activeTab === 'bienvenue' ? 'active' : ''}`}
+          onClick={() => handleTabClick('bienvenue')}
+        >
+          {activeTab === 'bienvenue' ? '>Bienvenue' : 'Bienvenue'}
+        </span>
+      </h1>
+      <LanguageSwitcher activeTab={activeTab} />
+    </div>
+  );
+};
 
 const About = () => (
   <div className='about'>
     <h1>About Me</h1>
     <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
-    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+    <img src="/felixpic.jpg" alt="Felix Qu Picture" />
   </div>
 );
 
