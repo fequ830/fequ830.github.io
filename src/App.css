@@ -13,6 +13,10 @@ body {
   font-family: Helvetica, serif
 }
 
+.home,
+.about,
+.contact,
+.projects,
 .app {
   /* width: 960px; */
   margin: 0 auto;
@@ -38,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #e5ffff;
   text-decoration: none;
 }
 
@@ -82,4 +86,26 @@ p {
 /* Styles for the slash (/) between "Welcome" and "Bienvenue" */
 h1 span:nth-child(2) {
   margin: 0 20px; /* Add space between the words */
+}
+
+.typeWriterText {
+  font-size: 40px;
+  color: #e5ffff;
+  line-height: .2;
+}
+
+.typeWriterCursor {
+  font-size: 40px;
+  color: #e5ffff;
+}
+
+/* .typewriter-container {
+  justify-content: center;
+  text-align: left;
+} */
+
+.typewriter-container {
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; /* Vertically center the Typewriter container */
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
-
+import Typewriter from "typewriter-effect";
 
 const App = () => (
   <div className='app'>
@@ -24,23 +24,6 @@ const Navigation = () => (
   </nav>
 );
 
-// const Home = () => {
-//   const [welcome, setWelcome] = useState(true);
-
-//   const toggleWelcome = () => {
-//     setWelcome((prevState) => !prevState);
-//   };
-
-//   return (
-//     <div className='home'>
-//       <h1 onClick={toggleWelcome} style={{ cursor: 'pointer' }}>
-//         {welcome ? 'Welcome' : 'Bienvenue'}
-//       </h1>
-//       <p>Ipsum dolor dolorem consectetur est velit fugiat...</p>
-//     </div>
-//   );
-// };
-
 const Home = () => {
   const [activeTab, setActiveTab] = useState('welcome');
 
@@ -50,6 +33,40 @@ const Home = () => {
 
   return (
     <div className='home'>
+          {/* <div className='typewriter-container'>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("いらっしゃいませ").start();
+              }}
+              options={{
+                loop: false, wrapperClassName: "typeWriterText", cursorClassName: "typeWriterCursor",
+              }}
+            />
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("<br />Wilkommen").start();
+              }}
+              options={{
+                loop: false, wrapperClassName: "typeWriterText", cursorClassName: "typeWriterCursor",
+              }}
+            />
+             <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("<br />Ласкаво просимо").start();
+              }}
+              options={{
+                loop: false, wrapperClassName: "typeWriterText", cursorClassName: "typeWriterCursor",
+              }}
+            />
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("<br />Fáilte").start();
+              }}
+              options={{
+                loop: false, wrapperClassName: "typeWriterText", cursorClassName: "typeWriterCursor",
+              }}
+            />
+          </div> */}
       <h1>
         <span
           className={`tab ${activeTab === 'welcome' ? 'active' : ''}`}
@@ -81,7 +98,8 @@ const About = () => (
 const Contact = () => (
   <div className='contact'>
     <h1>Contact Me</h1>
-    <p>You can reach me via email: <strong>hello@example.com</strong></p>
+    <p>You can reach me via email: <strong>fequ830@gmail.com</strong></p>
+    <p> </p>
   </div>
 );
 
