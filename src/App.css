@@ -8,16 +8,27 @@ html {
   margin: 0;
 }
 
+body {
+  background-color: #333319;
+  font-family: Helvetica, sans-serif
+}
+
 .app {
-  width: 960px;
+  /* width: 960px; */
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Center vertically */
+  height: 100vh; /* Take up the entire viewport height */
+  /* background-color: black; */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  background-color: black;
+  background-color: #332000;
   margin-bottom: 20px;
 }
 
@@ -36,9 +47,17 @@ nav ul li a {
 
 h1 {
   margin-bottom: 20px;
+  color: #e5ffff 
 }
 
 p {
   margin-bottom: 15px;
+  color: #e5ffff 
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5ffff 
+}

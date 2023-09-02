@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
 
+
 const App = () => (
   <div className='app'>
-    <h1>React Router Demo</h1>
     <Navigation />
     <Main />
   </div>
@@ -14,15 +14,18 @@ const Navigation = () => (
   <nav>
     <ul>
       <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/projects'>Projects</NavLink></li>
+      <h1 className="centered">FELIX QU</h1> {/* Add a class to center the name */}
       <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
       <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
     </ul>
+    
   </nav>
 );
 
 const Home = () => (
   <div className='home'>
-    <h1>Welcome to my portfolio website</h1>
+    <h1>WELCOME!</h1>
     <p> Feel free to browse around and learn more about me.</p>
   </div>
 );
@@ -42,13 +45,21 @@ const Contact = () => (
   </div>
 );
 
+const Projects = () => (
+  <div className='projects'>
+    <h1>Some of my stuff i made</h1>
+    <p>You can reach me via email: <strong>hello@example.com</strong></p>
+  </div>
+);
+
 
 
 const Main = () => (
   <Routes>
-    <Route exact path='/' component={<Home/>}></Route>
-    <Route exact path='/about' component={<About/>}></Route>
-    <Route exact path='/contact' component={<Contact/>}></Route>
+    <Route path='/' element={<Home />} />
+    <Route path='/about' element={<About />} />
+    <Route path='/contact' element={<Contact />} />
+    <Route path='/projects' element={<Projects />} />
   </Routes>
 );
 
