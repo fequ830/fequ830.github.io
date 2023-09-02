@@ -4,6 +4,7 @@ import { NavLink, Routes, Route } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 import Typewriter from "typewriter-effect";
 
+
 const App = () => (
   <div className='app'>
     <Navigation />
@@ -105,8 +106,12 @@ const Contact = () => (
 
 const Projects = () => (
   <div className='projects'>
-    <h1>Some of my stuff i made</h1>
-    <p>You can reach me via email: <strong>hello@example.com</strong></p>
+    <h1>LeashedIn</h1>
+    <h1>Boelter Hall Horror Game</h1>
+    <h1>Peach Party</h1>
+    <h1>Pomododo</h1>
+    <h1>Congress Analyzer (coming soon)</h1>
+
   </div>
 );
 

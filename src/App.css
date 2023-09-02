@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #333319;
-  font-family: Helvetica, serif
+  font-family: Helvetica, serif;
 }
 
 .home,
@@ -60,6 +60,7 @@ p {
   margin-bottom: 15px;
   color: #e5ffff;
   font-size: 20px;
+  font-family: monospace;
 }
 
 .centered {
@@ -99,13 +100,45 @@ h1 span:nth-child(2) {
   color: #e5ffff;
 }
 
-/* .typewriter-container {
-  justify-content: center;
-  text-align: left;
-} */
 
-.typewriter-container {
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; /* Vertically center the Typewriter container */
+
+.circle {
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+  box-sizing: border-box;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: perspective(10000px) rotateY(360deg) rotateX(15deg);
+  }
+  100%
+  {
+    transform: perspective(10000px) rotateY(0deg) rotateX(15deg);
+  }
+}
+
+
+.circle .char {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e5ffff;
+  color: #333319;
+  font-size: 2em;
+  padding: 5px 12px;
+  border-top: 4px solid #333319;
+  border-bottom: 4px solid #333319;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--char-index) * 11.3deg))
+  translateZ(250px);
 }
