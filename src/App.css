@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: #333319;
+  /* background-color: #060328; */
   font-family: helvetica, serif;
 }
 
@@ -33,6 +34,7 @@ nav ul {
   list-style: none;
   display: flex;
   background-color: #333319;
+  
   margin-bottom: 20px;
 }
 
@@ -84,7 +86,7 @@ p {
 
 .about img {
   width: 100%; /* Adjust the width as needed */
-  max-width: 300px; /* Set a maximum width to control image size */
+  max-width: 270px; /* Set a maximum width to control image size */
   height: auto; /* Maintain aspect ratio */
   margin-top: 20px; /* Add margin for spacing */
 }
@@ -288,13 +290,13 @@ h1 span:nth-child(2) {
 
 
 .underline-on-hover {
-  text-decoration: none;
+  text-decoration-style:dotted;
   transition: text-decoration 0.3s ease-in-out;
   color: #e5ffff;
 }
 
 .underline-on-hover:hover {
-  text-decoration: underline;
+  text-decoration-style: solid;
   color: #e5ffff;
 }
 
@@ -306,4 +308,11 @@ h1 span:nth-child(2) {
   padding-top: 10vh;
   padding-bottom: 20vh;
 
+}
+
+
+.about-content {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Create space between image and text */
 }

@@ -5,7 +5,7 @@ const LanguageSwitcher = ({ activeTab }) => {
   const content = activeTab === 'welcome' ? (
     <div class="textfield">
       <p>Linguistics+CS @ UCLA</p>
-      <p>The design of this site is an ode to my all-time favorite mystery game: <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>. I also wanted to have the main page in two languages, which you can toggle by clicking "Welcome" or "Bienvenue".</p>
+      <p>The design of this site is an ode to the analog style of my all-time favorite mystery game: <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>. I also wanted to have the main page in two languages, which you can toggle by clicking "Welcome" or "Bienvenue".</p>
     </div>
   ) : (
     <div class="textfield">

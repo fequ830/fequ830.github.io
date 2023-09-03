@@ -95,7 +95,7 @@ const Home = () => {
         </a>
         <p></p>
         <a
-          href="https://drive.google.com/uc?export=download&id=12qdeXrE5WZzwD_MG4FJcMa5xVB194dmU"
+          href="https://docs.google.com/document/d/12qdeXrE5WZzwD_MG4FJcMa5xVB194dmU/edit?usp=drive_link&ouid=106485059702041434206&rtpof=true&sd=true"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -122,7 +122,7 @@ const About = () => (
       <p>Tools: Visual Studio Code, XCode, Git</p>
       <p>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar</p>
       <br></br>
-      <p>You can reach me via email: <strong>fequ830@gmail.com</strong></p>
+      <p>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
     </div>
   </div>
 );
@@ -130,34 +130,10 @@ const About = () => (
 const Extra = () => (
   <div className='extra'>
     <h1>Extra</h1>
-    <p>The _____ I'm raving about</p>
-    <a
-      href="https://www.youtube.com/channel/UCQ4mN8NcmaayKkEErES5-Sw"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button"
-    >
-      Artist
-    </a>
-    <p></p>
-    <a
-      href="https://www.netflix.com/title/80136321?source=35"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button"
-    >
-      TV series
-    </a>
-    <p></p>
-    <a
-      href="https://advisa.se/en/research/brexit-bus/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button"
-    >
-      Time waster
-    </a>
-
+    <p>What I'm raving about:</p>
+    <p>Artists: <a href="https://www.youtube.com/channel/UCQ4mN8NcmaayKkEErES5-Sw" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a></p>
+    <p>Shows: <a href="https://www.netflix.com/title/80136321?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Babylon Berlin</a></p>
+    <p>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a></p>
   </div>
 );
 
@@ -197,27 +173,13 @@ const Projects = () => {
   </div>},
   ];
 
-  // return (
-  //   <div className='projects'>
-  //     <h1>Projects</h1>
-  //     <ul>
-  //       {projectList.map((project, index) => (
-  //         <li key={index} className="project-item">
-  //           <span className="project-name">{project.name}</span>
-  //           <span className="project-description">{project.description}</span>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
-
   return (
     <div className='projects'>
       <h1>Projects</h1>
       <ul>
         {projectList.map((project, index) => (
           <li key={index} className="project-item">
-            <a
+            <a 
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
