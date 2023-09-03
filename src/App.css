@@ -232,3 +232,49 @@ h1 span:nth-child(2) {
   perspective: 150rem;
   perspective-origin: center;
 }
+
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.project-name {
+  color: #e5ffff;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+.project-description {
+  display: none;
+  color: #e5ffff;
+  font-family: monospace;
+  width: 50vw;
+  font-size: 20px;
+  padding-top: 5px; /* Add spacing between name and description */
+}
+
+.project-item:hover .project-description {
+  display: block;
+}
+
+
+.tower-text {
+  font-size: smaller;
+  font-style: italic;
+}
+
+
+.underline-on-hover {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+  color: #e5ffff;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+  color: #e5ffff;
+}
