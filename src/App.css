@@ -15,7 +15,7 @@ body {
 
 .home,
 .about,
-.contact,
+.extra,
 .projects,
 .app {
   /* width: 960px; */
@@ -41,6 +41,10 @@ nav ul li {
   font-size: 30px;
 }
 
+nav ul li:hover {
+  text-decoration:underline;
+}
+
 nav ul li a {
   color: #e5ffff;
   text-decoration: none;
@@ -63,6 +67,14 @@ p {
   font-family: monospace;
 }
 
+.textfield {
+  margin-bottom: 15px;
+  color: #e5ffff;
+  font-size: 20px;
+  font-family: monospace;
+  width: 700px;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -79,10 +91,12 @@ p {
 
 
 /* Styles for the active tab */
-.tab.active {
+
+.tab:hover {
   text-decoration: underline;
-  cursor: pointer; /* Add this for pointer cursor on hover */
+  cursor: pointer;
 }
+
 
 /* Styles for the slash (/) between "Welcome" and "Bienvenue" */
 h1 span:nth-child(2) {
@@ -184,7 +198,7 @@ h1 span:nth-child(2) {
   }
   100% {
     /* adjust the height of wheel, default: 30*/
-    top: 28rem; 
+    top: 30rem; 
   } 
 }
 
@@ -243,9 +257,14 @@ h1 span:nth-child(2) {
 }
 
 .project-name {
+  text-decoration: none;
   color: #e5ffff;
   font-family: monospace;
   font-size: 30px;
+}
+
+.project-name:hover {
+  text-decoration: underline;
 }
 
 .project-description {
@@ -277,4 +296,14 @@ h1 span:nth-child(2) {
 .underline-on-hover:hover {
   text-decoration: underline;
   color: #e5ffff;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Align buttons horizontally in the center */
+  gap: 20px; /* Add spacing between buttons */
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+
 }
