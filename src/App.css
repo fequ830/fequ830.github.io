@@ -330,7 +330,7 @@ h1 span:nth-child(2) {
 
 
 .frame-container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
   border: 2px dotted #e5ffff;
@@ -341,4 +341,31 @@ h1 span:nth-child(2) {
   z-index: 1; /* Ensure the frame is above other content */
   overflow-y: auto; /* Allow the frame to be scrollable */
   max-height: 90%; /* Set a maximum height for the frame */
+}
+
+
+/*      SCROLLBAR       */
+/* For Firefox */
+/* Change the thumb (the draggable part) color */
+::-webkit-scrollbar-thumb {
+  background-color: #e5ffff;
+}
+
+/* Change the track (the background) color */
+::-webkit-scrollbar-track {
+  background-color: #333319;
+}
+
+/* For Webkit browsers like Chrome and Safari */
+/* Change the scrollbar width and color */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e5ffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333319;
 }
