@@ -10,7 +10,7 @@ const LanguageSwitcher = ({ activeTab }) => {
   ) : (
     <div class="textfield">
       <p>Linguistique+Informatique @ UCLA</p>
-      <p>Le design de cet site web est inspiré par mon jeu vidéo mystère préféré : <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>. Je voulais aussi avoir l'option de mettre la page principale en deux langues ; vous pouvez l'ajuster en cliquant sur « Welcome » ou « Bienvenue » ci-dessus.</p>
+      <p>Le design de ce site est inspiré par mon jeu vidéo mystère préféré : <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>. Je voulais aussi avoir l'option de mettre la page principale en deux langues ; vous pouvez l'ajuster en cliquant sur « Welcome » ou « Bienvenue » ci-dessus.</p>
     </div>
   );
 
