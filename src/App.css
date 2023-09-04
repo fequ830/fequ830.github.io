@@ -41,16 +41,17 @@ nav ul {
 nav ul li {
   padding: 20px;
   font-size: 30px;
-  text-decoration: none;
+  text-decoration-style: dotted;
 }
 
 nav ul li:hover {
-  text-decoration: none;
+  text-decoration-style: solid;
 }
 
 nav ul li a {
   color: #e5ffff;
   text-decoration: none;
+  text-decoration-style: dotted;
 }
 
 .current {
@@ -75,7 +76,7 @@ p {
   color: #e5ffff;
   font-size: 20px;
   font-family: monospace;
-  width: 700px;
+  width: 50vw;
 }
 
 .centered {
@@ -324,5 +325,5 @@ h1 span:nth-child(2) {
   align-items: center;
   padding-top: 5vh;
   padding-bottom: 10vh;
-  text-align: center; /*centers the buttons*/
+  text-align: left; /*centers the buttons*/
 }
