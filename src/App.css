@@ -327,3 +327,18 @@ h1 span:nth-child(2) {
   padding-bottom: 10vh;
   text-align: left; /*centers the buttons*/
 }
+
+
+.frame-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px dotted #e5ffff;
+  position: fixed; /* Keep the frame fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the frame exactly */
+  z-index: 1; /* Ensure the frame is above other content */
+  overflow-y: auto; /* Allow the frame to be scrollable */
+  max-height: 90%; /* Set a maximum height for the frame */
+}
