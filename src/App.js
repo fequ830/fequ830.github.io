@@ -109,7 +109,7 @@ const Home = () => {
 const About = () => (
   <div className='about'>
     <h1>About</h1>
-    <img src="/felixpic.jpg" alt="Profile Picture" />
+    <img src="/felixpic.jpg" alt="Me in Lucca" />
     <p> <span className="tower-text">Me at the top of Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
@@ -148,9 +148,9 @@ const Projects = () => {
        content: 
        <div className='textfield'>
         <p>Javascript, React, Node.js, MongoDB Atlas</p>
-        <p>-A collaboration on a social media web application for pet owners, inspired by LinkedIn and Instagram</p>
-        <p>-Users are able to create an account, add an account bio/pet subprofiles, publicly post text/images on their feed, like and comment on posts</p>
-        <p>-Real-time server results include checking username availability and displaying homepage search bar entries</p>
+        <p>A social media web application for pet owners, inspired by LinkedIn and Instagram</p>
+        <p>Users can create an account, add an account bio/pet subprofiles, publicly post text/images on their feed, like and comment on posts</p>
+        <p>Real-time server results include checking username availability and displaying homepage search bar entries</p>
         <a href="https://github.com/fequ830/LeashedIn" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
        </div>
     },
@@ -159,9 +159,9 @@ const Projects = () => {
        content:
        <div className='textfield'>
         <p>Javascript, React, Firebase</p>
-        <p>-Developed Pomododo, a web app to help students efficiently split their studying sessions and break times</p>
-        <p>-Uses Google authentication for profiles so users can track their total hours studied in Firebase server</p>
-        <p>-Main page has a timer that alternates between study and break modes; features some preset timers of popular study-break intervals like the Pomodoro method, and the option to set custom intervals</p>
+        <p>A web app to help students efficiently divide their study and break times</p>
+        <p>Uses Google authentication for profiles so users can track their total hours studied in Firebase server</p>
+        <p>Main page has a timer that alternates between study and break modes; features some preset timers of popular study-break intervals like the Pomodoro method, and the option to set custom intervals</p>
         <a href="https://github.com/AnooshkhaShetty/Pomododo" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
      </div>
     },
@@ -170,8 +170,8 @@ const Projects = () => {
        content:
        <div className='textfield'>
         <p>Unity, C#</p>
-        <p>-A first-person horror game where the player must try to escape a haunted version of UCLA’s Boelter Hall</p>
-        <p>-Created 3D assets such as poster boards and animated TV static to be placed around the map</p>
+        <p>A first-person horror game where the player must try to escape a haunted version of UCLA’s Boelter Hall</p>
+        <p>Created 3D assets such as poster boards and animated TV static to be placed around the map</p>
         <a href="https://olaycolay.itch.io/boelter" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Demo</a>
        </div>
     },
@@ -180,9 +180,9 @@ const Projects = () => {
       content:
       <div className='textfield'>
         <p>C++, OpenGL, Glut</p>
-        <p>-Created a two-player offline game inspired by Nintendo's Mario Party</p>
-        <p>-Sprites are called upon to change game state depending on player action/interaction with other sprites per tick</p>
-        <p>-OpenGL API is utilized to render objects in-game each tick</p>
+        <p>A two-player offline game inspired by Nintendo's Mario Party</p>
+        <p>Sprites are called upon to change game state depending on player action/interaction with other sprites per tick</p>
+        <p>OpenGL API is utilized to render objects in-game each tick</p>
         <a href="https://github.com/fequ830/Peach-Party" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
      </div> 
    },
@@ -190,7 +190,7 @@ const Projects = () => {
     title: "Congress Analyzer (coming soon)",
     content:
     <div className='textfield'>
-      <p>A tool using the Congress.gov API to analyze the voting patterns of Congressmembers and amendment votes</p>
+      <p>A tool using the Congress.gov API to analyze voting patterns and bill sponsorship among legislators</p>
       <a href="https://github.com/fequ830/congress-analyzer" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
     </div>
    }
