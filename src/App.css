@@ -30,29 +30,47 @@ body {
   /* background-color: black; */
 }
 
+/* Update your existing styles for the navigation bar */
 nav ul {
   list-style: none;
   display: flex;
   background-color: #333319;
-  
-  margin-bottom: 20px;
+  justify-content: center; /* Center the navigation items horizontally */
+  /* Other styles... */
 }
 
 nav ul li {
   padding: 20px;
   font-size: 30px;
   text-decoration-style: dotted;
+  /* Other styles... */
 }
 
 nav ul li:hover {
   text-decoration-style: solid;
+  /* Other styles... */
 }
 
 nav ul li a {
   color: #e5ffff;
   text-decoration: none;
   text-decoration-style: dotted;
+  /* Other styles... */
 }
+
+/* Ensure the navigation remains visible even on smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  nav ul li {
+    padding: 10px; /* Reduce padding for smaller touch targets */
+  }
+}
+
+
 
 .current {
   border-bottom: 4px solid white;
