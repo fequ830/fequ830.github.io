@@ -80,6 +80,13 @@ h1 {
   margin-bottom: 20px;
   color: #e5ffff;
   font-size: 60px;
+  text-align: center; /* Center the text horizontally */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
 }
 
 p {
@@ -167,7 +174,9 @@ h1 span:nth-child(2) {
 .wheel {
   width: 100%;
   height: calc(40rem * 0.8);
+  position: relative;
 }
+
 
 .line p {
   line-height: 0.8;
@@ -222,10 +231,6 @@ h1 span:nth-child(2) {
     /* adjust the height of wheel, default: 30*/
     top: 30rem; 
   } 
-}
-
-.wheel {
-  position: relative;
 }
 
 .line {

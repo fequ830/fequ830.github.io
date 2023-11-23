@@ -113,9 +113,8 @@ const About = () => (
     <p> <span className="tower-text">Me at the top of Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p>I'm a rising 3rd year Ling+CS major at UCLA. I'm passionate about webdev, AI, and languages (coding + spoken).</p>
-      <p>Languages: Python, C++, HTML/CSS, JavaScript (React.js), Bash</p>
-      <p>Tools: Visual Studio Code, XCode, Git</p>
+      <p>I'm a 3rd year Ling+CS major at UCLA. I'm passionate about history, languages, and tech law.</p>
+      <p>Competencies: Python, C++, Javascript/HTML/CSS, Bash, Git</p>
       <p>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar</p>
       <p>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
       <br></br>
