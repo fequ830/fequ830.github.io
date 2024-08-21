@@ -14,11 +14,11 @@ const App = () => (
 const Navigation = () => (
   <nav>
     <ul>
-      <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/projects'>Projects</NavLink></li>
-      <h1 className="centered">FELIX QU</h1> {/* Add a class to center the name */}
-      <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/extra'>Extra</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/'>home</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/projects'>projects</NavLink></li>
+      <h1 className="centered">felix qu</h1> {/* Add a class to center the name */}
+      <li><NavLink exact activeClassName="current" to='/about'>about</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/extra'>extra</NavLink></li>
     </ul>
     
   </nav>
@@ -34,26 +34,26 @@ const Home = () => {
   return (
     <div className='home' style={{ marginTop: '20vh'}}>
           <div class="wheel">
-            <div class="line"><p>*</p></div>
-            <div class="line"><p>**</p></div>
-            <div class="line"><p>***</p></div>
-            <div class="line"><p>****</p></div>
-            <div class="line"><p>*****</p></div>
-            <div class="line"><p>******</p></div>
-            <div class="line"><p>*******</p></div>
-            <div class="line"><p>********</p></div>
-            <div class="line"><p>*********</p></div>
-            <div class="line"><p>**********</p></div>
-            <div class="line"><p>***********</p></div>
-            <div class="line"><p>**********</p></div>
-            <div class="line"><p>*********</p></div>
-            <div class="line"><p>********</p></div>
-            <div class="line"><p>*******</p></div>
-            <div class="line"><p>******</p></div>
-            <div class="line"><p>*****</p></div>
-            <div class="line"><p>****</p></div>
-            <div class="line"><p>***</p></div>
-            <div class="line"><p>**</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>||||||||||</p></div>
             {/* <div class="line"><p>*</p></div> */}
           </div>
           <div style={{ marginTop: '100vh' }}>
@@ -94,7 +94,7 @@ const Home = () => {
         </a>
         <p></p>
         <a
-          href="https://docs.google.com/document/d/12qdeXrE5WZzwD_MG4FJcMa5xVB194dmU/edit?usp=drive_link&ouid=106485059702041434206&rtpof=true&sd=true"
+          href="https://docs.google.com/document/d/1-tSubcE5AcF53ICTAIs_8ByjPZZtiTNj607eERqB720/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -108,13 +108,13 @@ const Home = () => {
 
 const About = () => (
   <div className='about'>
-    <h1>About</h1>
+    <h1>about</h1>
     <img src="/felixpic.jpg" alt="Me in Lucca" />
-    <p> <span className="tower-text">Me at the top of Guinigi Tower in Lucca, Italy</span> </p>
+    <p> <span className="tower-text">atop the Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p>I'm a 3rd year Ling+CS major at UCLA. I'm passionate about history, languages, and tech law.</p>
-      <p>Competencies: Python, C++, Javascript/HTML/CSS, Bash, Git</p>
+      <p>I'm a 4th year at UCLA. Aside from CS, I love history, books, and fitness.</p>
+      <p>Tech I've used, in no order: Python, C++, Docker/Podman, Kubernetes, Helm, Azure DevOps, Terraform, Datadog, AWS, React/Node/Javascript</p>
       <p>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar</p>
       <p>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
       <br></br>
@@ -125,7 +125,7 @@ const About = () => (
 
 const Extra = () => (
   <div className='extra'>
-    <h1>Extra</h1>
+    <h1>extra</h1>
     <p>What I'm raving about:</p>
     <p>Artists: <a href="https://www.youtube.com/@limperatrice_" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a>
     , <a href="https://www.youtube.com/@AltnGunband" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Altın Gün</a>
@@ -184,21 +184,13 @@ const Projects = () => {
         <p>OpenGL API is utilized to render objects in-game each tick</p>
         <a href="https://github.com/fequ830/Peach-Party" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
      </div> 
-   },
-   {
-    title: "Congress Analyzer (coming soon)",
-    content:
-    <div className='textfield'>
-      <p>A tool using the Congress.gov API to analyze voting patterns and bill sponsorship among legislators</p>
-      <a href="https://github.com/fequ830/congress-analyzer" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
-    </div>
    }
   ]
 
 
   return (
     <div className='projects'>
-      <h1>Projects</h1>
+      <h1>projects</h1>
       <div className='accordion-container'>
         <Accordion items={items} />
       </div>
