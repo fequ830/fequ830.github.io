@@ -1,31 +1,38 @@
 /* Accordion.css */
 button {
-    display: inline-block;
-    width: 50vw;
-    padding: 20px 35px; /* Adjust padding as needed */
-    font-size: 20px; /* Adjust font size as needed */
-    font-family: monospace;
-    text-align: center;
-    text-decoration: none;
-    border: 1px dotted #e5ffff; /* Button outline color */
-    color: #e5ffff; /* Button text color */
-    border-radius: 0px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    background-color: transparent; /* Transparent background */
-    cursor: pointer;
+   display: inline-block;
+   width: 50vw;
+   padding: 20px 35px; /* Adjust padding as needed */
+   font-size: 30px; /* Adjust font size as needed */
+   font-family: obradinntextfont;
+   text-align: center;
+   text-decoration: none;
+   border: 1px dotted #e5ffff; /* Button outline color */
+   color: #e5ffff; /* Button text color */
+   border-radius: 0px; /* Rounded corners */
+   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+   background-color: transparent; /* Transparent background */
+   cursor: pointer;
+   position: relative; /* For pseudo-elements */
+   overflow: hidden; /* Clip pseudo-elements */
 }
 
- p {
-    font-size: 20px;
-    margin-top: 20px;
- }
- 
+p {
+   font-family: obradinntextfont;
+   font-size: 20px;
+   margin-top: 20px;
+}
 
- button:hover {
-    background-color: #e5ffff; /* Hover background color */
-    color: #333319; /* Hover text color */
-  }
-
- button:focus {
-    outline: none;
- }
+/* Add the dotted effect on hover */
+button:hover::before {
+   content: '';
+   position: absolute;
+   top: 5px; /* Adjust to control the inlay distance */
+   left: 5px;
+   right: 5px;
+   bottom: 5px;
+   border: 2px dotted #e5ffff; /* Dotted border color */
+   border-radius: 0px; /* Matching the button corners */
+   pointer-events: none; /* Prevents pseudo-element from capturing clicks */
+   z-index: 1; /* Places the border above the button's background */
+}

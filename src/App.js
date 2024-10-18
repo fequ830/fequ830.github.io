@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
-import LanguageSwitcher from './LanguageSwitcher';
 import Accordion from './Accordion';
 
 const App = () => (
@@ -14,11 +13,11 @@ const App = () => (
 const Navigation = () => (
   <nav>
     <ul>
-      <li><NavLink exact activeClassName="current" to='/'>home</NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/projects'>projects</NavLink></li>
-      <h1 className="centered">felix qu</h1> {/* Add a class to center the name */}
-      <li><NavLink exact activeClassName="current" to='/about'>about</NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/extra'>extra</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/'><h1 className="obradinn-subtitle">Home</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/projects'><h1 className="obradinn-subtitle">Projects</h1></NavLink></li>
+      <h1 className="obradinn-title" style={{"font-size": "100px"}}>Felix Qu</h1>
+      <li><NavLink exact activeClassName="current" to='/about'><h1 className="obradinn-subtitle">About</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/extra'><h1 className="obradinn-subtitle">Extra</h1></NavLink></li>
     </ul>
     
   </nav>
@@ -34,46 +33,28 @@ const Home = () => {
   return (
     <div className='home' style={{ marginTop: '20vh'}}>
           <div class="wheel">
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
-            <div class="line"><p>||||||||||</p></div>
+            <div class="line"><p>R O T A S</p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p>O P E R A</p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p>T E N E T</p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p>A R E P O</p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p>S A T O R</p></div>
+            <div class="line"><p></p></div>
+            <div class="line"><p></p></div>
             {/* <div class="line"><p>*</p></div> */}
           </div>
-          <div style={{ marginTop: '100vh' }}>
-            <h1>
-              <span
-                className={`tab ${activeTab === 'welcome' ? 'active' : ''}`}
-                onClick={() => handleTabClick('welcome')}
-              >
-                {activeTab === 'welcome' ? '>Welcome' : 'Welcome'}
-              </span>
-              <span>/</span>
-              <span
-                className={`tab ${activeTab === 'bienvenue' ? 'active' : ''}`}
-                onClick={() => handleTabClick('bienvenue')}
-              >
-                {activeTab === 'bienvenue' ? '>Bienvenue' : 'Bienvenue'}
-              </span>
-            </h1>
+          <div style={{ marginTop: '20vh' }}>
+            <p className="obradinn-text">
+              The design of this site is an ode to the analog style of my all-time favorite mystery game: <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>.
+            </p>
           </div>
-      <LanguageSwitcher activeTab={activeTab}/>
       <div className="button-container">
           <a
           href="https://www.linkedin.com/in/felixqu"
@@ -94,7 +75,7 @@ const Home = () => {
         </a>
         <p></p>
         <a
-          href="https://docs.google.com/document/d/1-tSubcE5AcF53ICTAIs_8ByjPZZtiTNj607eERqB720/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1RWEixGsAwGnRrB3RcfziLfcs2ZmGMuRf/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -108,15 +89,15 @@ const Home = () => {
 
 const About = () => (
   <div className='about'>
-    <h1>about</h1>
+    <h1 className="obradinn-title">About</h1>
     <img src="/felixpic.jpg" alt="Me in Lucca" />
-    <p> <span className="tower-text">atop the Guinigi Tower in Lucca, Italy</span> </p>
+    <p> <span className="obradinn-textitalic">atop the Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p>I'm a 4th year at UCLA. Aside from CS, I love history, books, and fitness.</p>
-      <p>Tech I've used, in no order: Python, C++, Docker/Podman, Kubernetes, Helm, Azure DevOps, Terraform, Datadog, AWS, React/Node/Javascript</p>
-      <p>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar</p>
-      <p>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
+      <p className='obradinn-text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, and fitness.</p>
+      <p className='obradinn-text'>Tech I've used, in no order: Python, C++, Docker/Podman, Kubernetes, Helm, Azure DevOps, Terraform, Datadog, AWS, React/Node/Javascript</p>
+      <p className='obradinn-text'>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar, Rothman Scholar</p>
+      <p className='obradinn-text'>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
       <br></br>
       <br></br>
     </div>
@@ -125,16 +106,16 @@ const About = () => (
 
 const Extra = () => (
   <div className='extra'>
-    <h1>extra</h1>
-    <p>What I'm raving about:</p>
-    <p>Artists: <a href="https://www.youtube.com/@limperatrice_" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a>
+    <h1 className="obradinn-title">Extra</h1>
+    <p className='obradinn-text'>What I'm raving about:</p>
+    <p className='obradinn-text'> Artists: <a href="https://www.youtube.com/@limperatrice_" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a>
     , <a href="https://www.youtube.com/@AltnGunband" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Altın Gün</a>
     , <a href="https://www.youtube.com/@jessieware" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Jessie Ware</a>
     </p>
-    <p>Shows: <a href="https://www.netflix.com/title/80136321?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Babylon Berlin</a>
+    <p className='obradinn-text'>Shows: <a href="https://www.netflix.com/title/80136321?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Babylon Berlin</a>
     , <a href="https://www.netflix.com/title/80025678?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">The Crown</a>
       </p>
-    <p>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
+    <p className='obradinn-text'>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
     </p>
   </div>
 );
@@ -146,41 +127,38 @@ const Projects = () => {
        title: "LeashedIn",
        content: 
        <div className='textfield'>
-        <p>Javascript, React, Node.js, MongoDB Atlas</p>
-        <p>A social media web application for pet owners, inspired by LinkedIn and Instagram</p>
+        <p>React, Node.js, MongoDB Atlas</p>
+        <p>Full-stack social media web app for pet owners, inspired by LinkedIn and Instagram</p>
         <p>Users can create an account, add an account bio/pet subprofiles, publicly post text/images on their feed, like and comment on posts</p>
-        <p>Real-time server results include checking username availability and displaying homepage search bar entries</p>
         <a href="https://github.com/fequ830/LeashedIn" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
        </div>
     },
+    {
+      title: "Topo Sort Visualizer",
+      content:
+      <div className='textfield'>
+        <p>Python</p>
+        <p>Implementation of Kahn's algorithm that generates a topological ordering of any repo's commit hashes</p>
+        <p>As a challenge, I did not use any built-in Git commands that would've made it easy, like "git log"</p>
+        <a href="https://github.com/fequ830/Peach-Party" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
+     </div> 
+   },
     {
        title: "Pomododo",
        content:
        <div className='textfield'>
         <p>Javascript, React, Firebase</p>
-        <p>A web app to help students efficiently divide their study and break times</p>
-        <p>Uses Google authentication for profiles so users can track their total hours studied in Firebase server</p>
-        <p>Main page has a timer that alternates between study and break modes; features some preset timers of popular study-break intervals like the Pomodoro method, and the option to set custom intervals</p>
+        <p>Web app to help students efficiently divide their study and break times</p>
+        <p>Features timer that alternates between study and break modes; features some preset timers of popular study-break intervals like the Pomodoro method, and the option to set custom intervals</p>
         <a href="https://github.com/AnooshkhaShetty/Pomododo" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
      </div>
-    },
-    {
-       title: "Boelter Hall Horror Game",
-       content:
-       <div className='textfield'>
-        <p>Unity, C#</p>
-        <p>A first-person horror game where the player must try to escape a haunted version of UCLA’s Boelter Hall</p>
-        <p>Created 3D assets such as poster boards and animated TV static to be placed around the map</p>
-        <a href="https://olaycolay.itch.io/boelter" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Demo</a>
-       </div>
     },
     {
       title: "Peach Party",
       content:
       <div className='textfield'>
         <p>C++, OpenGL, Glut</p>
-        <p>A two-player offline game inspired by Nintendo's Mario Party</p>
-        <p>Sprites are called upon to change game state depending on player action/interaction with other sprites per tick</p>
+        <p>Two-player offline game inspired by Nintendo's Mario Party</p>
         <p>OpenGL API is utilized to render objects in-game each tick</p>
         <a href="https://github.com/fequ830/Peach-Party" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
      </div> 
@@ -190,7 +168,7 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <h1>projects</h1>
+      <h1 className="obradinn-title">Projects</h1>
       <div className='accordion-container'>
         <Accordion items={items} />
       </div>
