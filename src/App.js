@@ -75,7 +75,7 @@ const Home = () => {
         </a>
         <p></p>
         <a
-          href="https://drive.google.com/file/d/1RWEixGsAwGnRrB3RcfziLfcs2ZmGMuRf/view?usp=sharing"
+          href="https://drive.google.com/file/d/1CE_Uy-Tbw_i037TS_0uZVwVmx2IKSe1K/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -94,9 +94,10 @@ const About = () => (
     <p> <span className="obradinn-textitalic">atop the Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p className='obradinn-text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, and fitness.</p>
-      <p className='obradinn-text'>Tech I've used, in no order: Python, C++, Docker/Podman, Kubernetes, Helm, Azure DevOps, Terraform, Datadog, AWS, React/Node/Javascript</p>
+      <p className='obradinn-text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, rollerskating, and working out.</p>
       <p className='obradinn-text'>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar, Rothman Scholar</p>
+      <p className='obradinn-text'>Languages: Python, C++, OCaml, Haskell, Java</p>
+      <p className='obradinn-text'>Technologies/Frameworks: Docker/Podman, Kubernetes, Helm, AWS, Azure DevOps, Terraform, Datadog, React/Node</p>
       <p className='obradinn-text'>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
       <br></br>
       <br></br>
@@ -123,6 +124,18 @@ const Extra = () => (
 
 const Projects = () => {
   const items = [
+    {
+      title: "Asyncio Proxy Network",
+      content: 
+      <div className='textfield'>
+       <p>Python</p>
+       <p>Distributed proxy server network with Python’s asyncio library, using a server herd architecture
+       with five servers that bidirectionally communicate to share real-time location data from clients</p>
+       <p>Features protocols for client-server communication, which location updates/queries for nearby places using
+       the Google Places API and utilizing asyncio’s asynchronous data propagation</p>
+       <a href="https://github.com/fequ830/asyncionetwork" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Repo</a>
+      </div>
+   },
     {
        title: "LeashedIn",
        content: 
