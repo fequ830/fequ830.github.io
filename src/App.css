@@ -1,70 +1,69 @@
 @font-face {
-  font-family: 'obradinntitlefont';
-  src:  url('./fonts/BLACC___.TTF') format('truetype');
-       /* url('./fonts/IMFePIit28P.ttf') format('truetype'),
-       url('./fonts/IMFePIrm28P.ttf') format('truetype'); */
+  font-family: 'titlefont';
+  src:  url('./fonts/LofiForestTrial-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }  
 
 @font-face {
-  font-family: 'obradinnsubtitlefont';
-  src:  url('./fonts/BLACCS__.TTF') format('truetype');
+  font-family: 'subtitlefont';
+  src:  url('./fonts/IMFePIit28P.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-.obradinn-title {
-  font-family: 'obradinntitlefont', sans-serif;
+.title {
+  font-family: 'titlefont', sans-serif;
 }
 
 
-.obradinn-subtitle {
-  font-family: 'obradinnsubtitlefont', sans-serif;
+.subtitle {
+  font-family: 'subtitlefont', sans-serif;
+  color: transparent;         /* Make the inside transparent */
+    -webkit-text-stroke: 1px #C1785F;
   position: relative; /* Set relative positioning for the pseudo-element */
-  color: #e5ffff;
+  padding-left: 1em;
 }
 
 /* Pseudo-element for the dotted underline */
-.obradinn-subtitle::after {
-  content: '';
+.subtitle::after {
+  content: "☞";
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: 2px; /* Adjust to control the distance from the text */
-  border-bottom: 2px dotted currentColor; /* Dotted underline */
-  transform: scaleX(0); /* Start with a hidden underline */
+  right: 3.5em;
+  bottom: 0;
+  transform: scaleX(0);
   transform-origin: center;
-  /* transition: transform 0.1s ease-in-out; */
+  transition: transform 0.1s ease-in-out;
 }
 
-/* Expand the dotted underline on hover */
-.obradinn-subtitle:hover::after {
-  transform: scaleX(1); /* Show the underline on hover */
+/* actually show the animation on hover */
+.subtitle:hover::after {
+  transform: scaleX(1);
 }
 
 
 @font-face {
-  font-family: 'obradinntextfont';
+  font-family: 'textfont';
   src:         url('./fonts/IMFePIrm28P.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
 
-.obradinn-text {
-  font-family: 'obradinntextfont', sans-serif;
+.text {
+  font-family: 'textfont', sans-serif;
   position: relative; /* Set relative positioning for the pseudo-element */
 }
 
 @font-face {
-  font-family: 'obradinntextitalicfont';
+  font-family: 'textitalicfont';
   src: url('./fonts/IMFePIit28P.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }  
 
-.obradinn-textitalic {
-  font-family: 'obradinntextitalicfont', sans-serif;
+.textitalic {
+  font-family: 'textitalicfont', sans-serif;
   position: relative; /* Set relative positioning for the pseudo-element */
 }
 
@@ -72,7 +71,7 @@
 
 
 body {
-  font-family: 'ObraDinnFonts', sans-serif;
+  font-family: 'textfont', sans-serif;
 }
 
 
@@ -87,7 +86,7 @@ html {
 }
 
 body {
-  background-color: #333319;
+  background-color: #E4C8AB;
   /* background-color: #060328; */
   font-family: monospace, serif;
 }
@@ -99,7 +98,6 @@ body {
 .app {
   /* width: 960px; */
   margin: 0 auto;
-  padding: 20px;
   display: flex;
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center horizontally */
@@ -112,7 +110,6 @@ body {
 nav ul {
   list-style: none;
   display: flex;
-  background-color: #333319;
   justify-content: center; /* Center the navigation items horizontally */
   /* Other styles... */
 }
@@ -156,7 +153,7 @@ nav ul li a {
 
 h1 {
   margin-bottom: 20px;
-  color: #e5ffff;
+  color: #526E6B;
   font-size: 60px;
   text-align: center; /* Center the text horizontally */
 }
@@ -169,7 +166,7 @@ h1 {
 
 p {
   margin-bottom: 15px;
-  color: #e5ffff;
+  color: #526E6B;
   font-size: 20px;
   font-family: monospace;
 }
@@ -226,11 +223,11 @@ h1 span:nth-child(2) {
     display: inline-block;
     padding: 20px 35px; /* Adjust padding as needed */
     font-size: 30px; /* Adjust font size as needed */
-    font-family: obradinntextfont;
+    font-family: textfont;
     text-align: center;
     text-decoration: none;
-    border: 1px dotted #e5ffff; /* Button outline color */
-    color: #e5ffff; /* Button text color */
+    border: 1px dotted #526E6B; /* Button outline color */
+    color: #526E6B; /* Button text color */
     border-radius: 0px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
     background-color: transparent; /* Transparent background */
@@ -246,7 +243,7 @@ h1 span:nth-child(2) {
   left: 1px;
   right: 1px;
   bottom: 1px;
-  background-image: radial-gradient(circle, rgba(229, 255, 255, 0.8) 1px, transparent 1px); /* Grainy background */
+  background-image: radial-gradient(circle, #526E6B 1px, transparent 1px); /* Grainy background */
   background-size: 4px 4px; /* Size of the dots */
   opacity: 0.6; /* Opacity for the grain effect */
   z-index: 1; /* Places the background above the button's original background */
@@ -255,115 +252,6 @@ h1 span:nth-child(2) {
 
 
 
-
-
-
-
-
-
-
-
-.wheel {
-  width: 100%;
-  height: calc(40rem * 0.8);
-  position: relative;
-}
-
-
-.line p {
-  line-height: 0.8;
-  padding: 0;
-  margin: 0;
-  font-family: obradinntextfont;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.75rem;
-  white-space: nowrap;
-  text-align: center;
-}
-
-
-
-@keyframes rotate {
-  0% {
-    opacity: 1;
-    transform: rotateX(90deg);
-  }
-
-  50% {
-    transform: rotateX(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotateX(-90deg);
-  }
-}
-
-@keyframes scaleToCenter {
-  0% {
-    transform: scale(0.9);
-  }
-
-  50% {
-    transform: scale(1.0);
-  }
-
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-@keyframes moveDown {
-  0% {
-    top: 0;
-  }
-  100% {
-    /* adjust the height of wheel, default: 30*/
-    top: 10rem; 
-  } 
-}
-
-.line {
-  width: 100%;
-  animation:
-    3s infinite forwards ease-in-out scaleToCenter,
-    3s infinite forwards ease-in-out moveDown
-  ;
-  position: absolute;
-}
-
-.line p {
-  opacity: 0;
-  backface-visibility: hidden;
-  animation: 3s infinite forwards linear rotate;
-}
-
-.line:nth-child(2), .line:nth-child(2) p { animation-delay: 0.2s }
-.line:nth-child(3), .line:nth-child(3) p { animation-delay: 0.4s }
-.line:nth-child(4), .line:nth-child(4) p { animation-delay: 0.6s }
-.line:nth-child(5), .line:nth-child(5) p { animation-delay: 0.8s }
-.line:nth-child(6), .line:nth-child(6) p { animation-delay: 1.0s }
-.line:nth-child(7), .line:nth-child(7) p { animation-delay: 1.2s }
-.line:nth-child(8), .line:nth-child(8) p { animation-delay: 1.4s }
-.line:nth-child(9), .line:nth-child(9) p { animation-delay: 1.6s }
-.line:nth-child(10), .line:nth-child(10) p { animation-delay: 1.8s }
-.line:nth-child(11), .line:nth-child(11) p { animation-delay: 2.0s }
-.line:nth-child(12), .line:nth-child(12) p { animation-delay: 2.2s }
-.line:nth-child(13), .line:nth-child(13) p { animation-delay: 2.4s }
-.line:nth-child(14), .line:nth-child(14) p { animation-delay: 2.6s }
-.line:nth-child(15), .line:nth-child(15) p { animation-delay: 2.8s }
-/* .line:nth-child(16), .line:nth-child(16) p { animation-delay: 2.25s }
-.line:nth-child(17), .line:nth-child(17) p { animation-delay: 2.4s }
-.line:nth-child(18), .line:nth-child(18) p { animation-delay: 2.55s }
-.line:nth-child(19), .line:nth-child(19) p { animation-delay: 2.7s }
-.line:nth-child(20), .line:nth-child(20) p { animation-delay: 2.85s }
-.line:nth-child(21), .line:nth-child(21) p { animation-delay: 3.0s } */
-
-.line {
-  perspective: 150rem;
-  perspective-origin: center;
-}
 
 
 .project-item {
@@ -401,16 +289,16 @@ h1 span:nth-child(2) {
 
 
 .underline-on-hover {
-  font-family: obradinntextitalicfont;
+  font-family: textitalicfont;
   font-size: 25px;
   text-decoration-style:dotted;
   transition: text-decoration 0.3s ease-in-out;
-  color: #e5ffff;
+  color: #526E6B;
 }
 
 .underline-on-hover:hover {
   text-decoration-style: solid;
-  color: #e5ffff;
+  /* color: #e5ffff; */
 }
 
 
@@ -444,7 +332,7 @@ h1 span:nth-child(2) {
   width: 90%;
   margin: 0 auto;
   padding: 20px;
-  border: 2px dotted #e5ffff;
+  border: 2px dotted #526E6B;
   position: fixed; /* Keep the frame fixed */
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
@@ -459,12 +347,12 @@ h1 span:nth-child(2) {
 /* For Firefox */
 /* Change the thumb (the draggable part) color */
 ::-webkit-scrollbar-thumb {
-  background-color: #e5ffff;
+  background-color: #526E6B;
 }
 
 /* Change the track (the background) color */
 ::-webkit-scrollbar-track {
-  background-color: #333319;
+  background-color: #E4C8AB;
 }
 
 /* For Webkit browsers like Chrome and Safari */
@@ -474,9 +362,9 @@ h1 span:nth-child(2) {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e5ffff;
+  background-color: #526E6B;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #333319;
+  background-color: #E4C8AB;
 }

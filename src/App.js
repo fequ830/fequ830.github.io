@@ -5,6 +5,7 @@ import Accordion from './Accordion';
 
 const App = () => (
   <div className='app'>
+    <h1 className="title" style={{"font-size": "170px"}}>Felix Qu</h1>
     <Navigation />
     <Main />
   </div>
@@ -13,11 +14,10 @@ const App = () => (
 const Navigation = () => (
   <nav>
     <ul>
-      <li><NavLink exact activeClassName="current" to='/'><h1 className="obradinn-subtitle">Home</h1></NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/projects'><h1 className="obradinn-subtitle">Projects</h1></NavLink></li>
-      <h1 className="obradinn-title" style={{"font-size": "100px"}}>Felix Qu</h1>
-      <li><NavLink exact activeClassName="current" to='/about'><h1 className="obradinn-subtitle">About</h1></NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/extra'><h1 className="obradinn-subtitle">Extra</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/'><h1 className="subtitle">Home</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/projects'><h1 className="subtitle">Projects</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/about'><h1 className="subtitle">About</h1></NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/extra'><h1 className="subtitle">Extra</h1></NavLink></li>
     </ul>
     
   </nav>
@@ -30,31 +30,7 @@ const Home = () => {
     setActiveTab(tab);
   };
 
-  return (
-    <div className='home' style={{ marginTop: '20vh'}}>
-          <div class="wheel">
-            <div class="line"><p>R O T A S</p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p>O P E R A</p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p>T E N E T</p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p>A R E P O</p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p>S A T O R</p></div>
-            <div class="line"><p></p></div>
-            <div class="line"><p></p></div>
-            {/* <div class="line"><p>*</p></div> */}
-          </div>
-          <div style={{ marginTop: '20vh' }}>
-            <p className="obradinn-text">
-              The design of this site is an ode to the analog style of my all-time favorite mystery game: <a href="https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Return of the Obra Dinn</a>.
-            </p>
-          </div>
+  return ( 
       <div className="button-container">
           <a
           href="https://www.linkedin.com/in/felixqu"
@@ -83,22 +59,21 @@ const Home = () => {
           Resume
         </a>
       </div>
-    </div>
   );
 };
 
 const About = () => (
   <div className='about'>
-    <h1 className="obradinn-title">About</h1>
+    <h1 className="title">About</h1>
     <img src="/felixpic.jpg" alt="Me in Lucca" />
-    <p> <span className="obradinn-textitalic">atop the Guinigi Tower in Lucca, Italy</span> </p>
+    <p> <span className="textitalic">atop the Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p className='obradinn-text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, rollerskating, and working out.</p>
-      <p className='obradinn-text'>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar, Rothman Scholar</p>
-      <p className='obradinn-text'>Languages: Python, C++, OCaml, Haskell, Java</p>
-      <p className='obradinn-text'>Technologies/Frameworks: Docker/Podman, Kubernetes, Helm, AWS, Azure DevOps, Terraform, Datadog, React/Node</p>
-      <p className='obradinn-text'>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
+      <p className='text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, rollerskating, and working out.</p>
+      <p className='text'>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar, Rothman Scholar</p>
+      <p className='text'>Languages: Python, C++, OCaml, Haskell, Java</p>
+      <p className='text'>Technologies/Frameworks: Docker/Podman, Kubernetes, Helm, AWS, Azure DevOps, Terraform, Datadog, React/Node</p>
+      <p className='text'>You can reach me via email: <a href="mailto:fequ830@gmail.com" className="underline-on-hover">fequ830@gmail.com</a></p>
       <br></br>
       <br></br>
     </div>
@@ -107,16 +82,16 @@ const About = () => (
 
 const Extra = () => (
   <div className='extra'>
-    <h1 className="obradinn-title">Extra</h1>
-    <p className='obradinn-text'>What I'm raving about:</p>
-    <p className='obradinn-text'> Artists: <a href="https://www.youtube.com/@limperatrice_" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a>
+    <h1 className="title">Extra</h1>
+    <p className='text'>What I'm raving about:</p>
+    <p className='text'> Artists: <a href="https://www.youtube.com/@limperatrice_" target="_blank" rel="noopener noreferrer" className="underline-on-hover">L'Impératrice</a>
     , <a href="https://www.youtube.com/@AltnGunband" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Altın Gün</a>
     , <a href="https://www.youtube.com/@jessieware" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Jessie Ware</a>
     </p>
-    <p className='obradinn-text'>Shows: <a href="https://www.netflix.com/title/80136321?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Babylon Berlin</a>
+    <p className='text'>Shows: <a href="https://www.netflix.com/title/80136321?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Babylon Berlin</a>
     , <a href="https://www.netflix.com/title/80025678?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">The Crown</a>
       </p>
-    <p className='obradinn-text'>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
+    <p className='text'>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
     </p>
   </div>
 );
@@ -181,7 +156,7 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <h1 className="obradinn-title">Projects</h1>
+      <h1 className="title">Projects</h1>
       <div className='accordion-container'>
         <Accordion items={items} />
       </div>
