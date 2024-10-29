@@ -5,7 +5,7 @@ import Accordion from './Accordion';
 
 const App = () => (
   <div className='app'>
-    <h1 className="title" style={{"font-size": "170px"}}>Felix Qu</h1>
+    <h1 className="name">Felix Qu</h1>
     <Navigation />
     <Main />
   </div>
@@ -92,6 +92,7 @@ const Extra = () => (
     , <a href="https://www.netflix.com/title/80025678?source=35" target="_blank" rel="noopener noreferrer" className="underline-on-hover">The Crown</a>
       </p>
     <p className='text'>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
+    , <a href="https://www.jetpunk.com/quizzes/how-many-countries-can-you-name" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Countries of the World Quiz</a>
     </p>
   </div>
 );
