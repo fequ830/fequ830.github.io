@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa2fee60.css",
-    "main.js": "/static/js/main.6b6f7f6c.js",
-    "static/media/BLACCS__.TTF": "/static/media/BLACCS__.67cfd011eeb0fe564628.TTF",
+    "main.css": "/static/css/main.7794f583.css",
+    "main.js": "/static/js/main.79aa0d12.js",
+    "static/media/LofiForestTrial-Bold.ttf": "/static/media/LofiForestTrial-Bold.327bec51983527deeecc.ttf",
     "static/media/IMFePIit28P.ttf": "/static/media/IMFePIit28P.8973882ce809326e9fe3.ttf",
     "static/media/IMFePIrm28P.ttf": "/static/media/IMFePIrm28P.e56afecb9372a7bae4c8.ttf",
-    "static/media/BLACC___.TTF": "/static/media/BLACC___.fefafb5707c21145d91c.TTF",
     "index.html": "/index.html",
-    "main.aa2fee60.css.map": "/static/css/main.aa2fee60.css.map",
-    "main.6b6f7f6c.js.map": "/static/js/main.6b6f7f6c.js.map"
+    "main.7794f583.css.map": "/static/css/main.7794f583.css.map",
+    "main.79aa0d12.js.map": "/static/js/main.79aa0d12.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa2fee60.css",
-    "static/js/main.6b6f7f6c.js"
+    "static/css/main.7794f583.css",
+    "static/js/main.79aa0d12.js"
   ]
 }
