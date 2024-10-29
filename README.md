@@ -1,6 +1,12 @@
 note to self:
 (when repo is downloaded or packages are updated)
-0. npm install
+npm install
 
-1. npm run deploy
-2. npm start
+
+
+
+To start the server:
+npm start
+
+To update the Github Pages (run this after done with all changes):
+npm run deploy
