@@ -13,8 +13,9 @@
 }
 
 .name {
+  padding-top: 10vh;
   font-family: 'titlefont', sans-serif;
-  font-size: 250px;
+  font-size: 215px;
   color: #B2F8FE;
 }
 
