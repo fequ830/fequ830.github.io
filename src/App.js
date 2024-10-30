@@ -69,7 +69,7 @@ const About = () => (
     <p> <span className="textitalic">atop the Guinigi Tower in Lucca, Italy</span> </p>
     <br></br>
     <div className='textfield'>
-      <p className='text'>I'm a 4th year at UCLA. Aside from CS, I love history, reading, rollerskating, and working out.</p>
+      <p className='text'>I'm a student at UCLA. Aside from computer science, I love history, reading, rollerskating, and working out.</p>
       <p className='text'>Honors and Awards: Dean's Honor List (Fall '22, Winter '23, Spring '23), Stockton Scholar, Rothman Scholar</p>
       <p className='text'>Languages: Python, C++, OCaml, Haskell, Java</p>
       <p className='text'>Technologies/Frameworks: Docker/Podman, Kubernetes, Helm, AWS, Azure DevOps, Terraform, Datadog, React/Node</p>
@@ -94,6 +94,8 @@ const Extra = () => (
     <p className='text'>Time wasters: <a href="https://advisa.se/en/research/brexit-bus/" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Brexit Bus</a>
     , <a href="https://www.jetpunk.com/quizzes/how-many-countries-can-you-name" target="_blank" rel="noopener noreferrer" className="underline-on-hover">Countries of the World Quiz</a>
     </p>
+    <br></br>
+    <br></br>
   </div>
 );
 

@@ -14,7 +14,7 @@
 
 .name {
   font-family: 'titlefont', sans-serif;
-  font-size: 200px;
+  font-size: 250px;
   color: #B2F8FE;
 }
 
@@ -122,14 +122,11 @@ body {
 .extra,
 .projects,
 .app {
-  /* width: 960px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center horizontally */
   justify-content: flex-start; /* Center vertically */
-  height: 100vh; /* Take up the entire viewport height */
-  /* background-color: black; */
 }
 
 /* Update your existing styles for the navigation bar */
@@ -137,40 +134,20 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center; /* Center the navigation items horizontally */
-  /* Other styles... */
 }
 
 nav ul li {
   padding: 20px;
   font-size: 30px;
   text-decoration-style: dotted;
-  /* Other styles... */
 }
 
-nav ul li:hover {
-  text-decoration-style: solid;
-  /* Other styles... */
-}
 
 nav ul li a {
   color: #e5ffff;
   text-decoration: none;
   text-decoration-style: dotted;
-  /* Other styles... */
 }
-
-/* Ensure the navigation remains visible even on smaller screens */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Stack items vertically for smaller screens */
-    align-items: center; /* Center items vertically */
-  }
-
-  nav ul li {
-    padding: 10px; /* Reduce padding for smaller touch targets */
-  }
-}
-
 
 
 .current {
@@ -183,12 +160,6 @@ h1 {
   color: #B2F8FE;
   font-size: 60px;
   text-align: center; /* Center the text horizontally */
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 40px; /* Adjust the font size for smaller screens */
-  }
 }
 
 p {
@@ -213,6 +184,8 @@ p {
   max-width: 270px; /* Set a maximum width to control image size */
   height: auto; /* Maintain aspect ratio */
   margin-top: 20px; /* Add margin for spacing */
+  border: 1.5px dotted;
+  color:#069e97;
 }
 
 
@@ -276,7 +249,7 @@ p {
 .button-container {
   display: flex;
   justify-content: center; /* Align buttons horizontally in the center */
-  gap: 20px; /* Add spacing between buttons */
+  gap: 1rem; /* Add spacing between buttons */
   padding-top: 10vh;
   padding-bottom: 20vh;
 
@@ -299,19 +272,19 @@ p {
 }
 
 
-.frame-container {
+/* .frame-container {
   width: 95%;
   margin: 0 auto;
   padding: 20px;
   border: 1.5px dotted #069e97;
-  position: fixed; /* Keep the frame fixed */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the frame exactly */
-  z-index: 1; /* Ensure the frame is above other content */
-  overflow-y: auto; /* Allow the frame to be scrollable */
-  max-height: 90%; /* Set a maximum height for the frame */
-}
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  overflow-y: auto; 
+  max-height: 90%; 
+} */
 
 
 /*      SCROLLBAR       */
@@ -338,4 +311,30 @@ p {
 
 ::-webkit-scrollbar-track {
   background-color: #004336;
+}
+
+
+/* FOR MOBILE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  nav ul li {
+    padding: 1px; /* Reduce padding for smaller touch targets */
+  }
+
+  .name {
+    font-size: 7rem; /* Adjust as needed for mobile */
+  }
+
+  .button-container {
+  flex-direction: column;
+  align-items: center; /* Center buttons vertically */
+  }
 }
