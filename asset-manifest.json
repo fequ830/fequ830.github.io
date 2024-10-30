@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd666f5e.css",
+    "main.css": "/static/css/main.715e9c86.css",
     "main.js": "/static/js/main.bcea2d0e.js",
     "static/media/LofiForestTrial-Bold.ttf": "/static/media/LofiForestTrial-Bold.327bec51983527deeecc.ttf",
     "static/media/IMFePIit28P.ttf": "/static/media/IMFePIit28P.8973882ce809326e9fe3.ttf",
     "static/media/IMFePIrm28P.ttf": "/static/media/IMFePIrm28P.e56afecb9372a7bae4c8.ttf",
     "index.html": "/index.html",
-    "main.dd666f5e.css.map": "/static/css/main.dd666f5e.css.map",
+    "main.715e9c86.css.map": "/static/css/main.715e9c86.css.map",
     "main.bcea2d0e.js.map": "/static/js/main.bcea2d0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd666f5e.css",
+    "static/css/main.715e9c86.css",
     "static/js/main.bcea2d0e.js"
   ]
 }
