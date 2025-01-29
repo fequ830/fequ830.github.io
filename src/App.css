@@ -26,47 +26,50 @@
   -webkit-text-stroke: 1px #B2F8FE;
 }
 
-/*the nav bar titles*/
+/* Nav bar titles */
 .subtitle {
   font-family: 'subtitlefont', sans-serif;
-  color: transparent;         /* Make the inside transparent */
-    -webkit-text-stroke: 1px #C1785F;
-  position: relative; /* Set relative positioning for the pseudo-element */
-  padding-left: 1em;
+  color: transparent;         
+  -webkit-text-stroke: 1px #C1785F;
+  position: relative; 
+  padding: 0 .7em; /* Add space for left and right pointers */
+  transition: -webkit-text-stroke 0.1s ease;
 }
 
-.subtitle {
-  font-family: 'subtitlefont', sans-serif;
-  color: transparent;           /* Make the inside transparent */
-  -webkit-text-stroke: 1px #C1785F; /* Outline color */
-  position: relative;           /* Set relative positioning for the pseudo-element */
-  padding-left: 1em;
-  transition: color 0.1s ease-in-out;
-}
-
-/* Pseudo-element for the ☞ symbol with outline */
+/* Pseudo-elements for the ☞ symbols with outline */
+.subtitle::before,
 .subtitle::after {
   content: "☞";
   position: absolute;
-  left: 0;
-  right: 3.5em;
-  bottom: 0;
-  color: transparent;              /* Transparent fill */
-  -webkit-text-stroke: 1px #C1785F; /* Outline color */
+  color: transparent;              
+  -webkit-text-stroke: 1px #C1785F;
+  opacity: 0; /* Hide by default */
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.subtitle::before {
+  left: -.5em; /* Adjust spacing for left pointer */
+  transform: scaleX(1);   
+}
+
+.subtitle::after {
+  right: -.5em; /* Adjust spacing for right pointer */
+  transform: scaleX(-1); /* Flip left pointer */
 }
 
 /* Hover effect for solid text and ☞ animation */
 .subtitle:hover {
-  color: #C1785F;                  /* Change to solid color on hover */
-  -webkit-text-stroke: 0;          /* Remove outline */
+  color: #C1785F;  /* Fill text on hover */
+  -webkit-text-stroke: 0; /* Remove outline */
 }
 
+.subtitle:hover::before,
 .subtitle:hover::after {
-  transform: scaleX(1);            /* Actually show the animation on hover */
+  opacity: 1; /* Show both ☞ symbols on hover */
 }
+
 
 
 
